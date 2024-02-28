@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Calculator app</title>
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+<body class="theme-one">
+  <main>
+    <header>
+      <p>calc</p>
+        <div class="flexer">
+          <p>theme</p>
+          <div>
+            <p class="label-cntr">
+              <label for="one">1</label>
+              <label for="two">2</label>
+              <label for="three">3</label>
+            </p>            <div class="radio-cntr">
+              <span class="thumb"></span>
+              <input type="radio" id="one">
+              <input type="radio" id="two">
+              <input type="radio" id="three">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section> 
+      <form action="#" novalidate>
+        <div class="inpt-cntr">
+          <input type="text">
+          <p class="error"></p>
+        </div>
+        <div class="btn-cntr">
+          <button class="number">7</button>
+          <button class="number">8</button>
+          <button class="number">9</button>
+          <button  id="delete">DEL</button>
+          <button class="number">4</button>
+          <button class="number">5</button>
+          <button class="number">6</button>
+          <button class="op">+</button>
+          <button class="number">1</button>
+          <button class="number">2</button>
+          <button class="number">3</button>
+          <button class="op">-</button>
+          <button class="number" >.</button>
+          <button class="number">0</button>
+          <button class="op">/</button>
+          <button class="op">*</button>
+          <button class="spaner scnd-last " id="reset">RESET</button>
+          <button class="spaner last" id="equal">=</button>
+        </div>
+      </form>
+    </section>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">samson mamuye</a>.
+    </div>
+  </main>
+<script src="./javascript.js"></script>
+</body>
+
+</html>

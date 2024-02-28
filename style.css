@@ -1,0 +1,357 @@
+
+
+.theme-one {
+      ---Very--dark--desaturated--blue--main--background: hsl(222, 26%, 31%);
+      ---Very--dark--desaturated--blue--toggle--background-keypad--background: hsl(223, 31%, 20%);
+      ---Very--dark--desaturated--blue--screen--background: hsl(224, 36%, 15%);
+      ---Desaturated--dark--blue--key--background: hsl(225, 21%, 49%);
+      ---Desaturated--dark--blue--key--shadow: hsl(224, 28%, 35%);
+      ---Red--key--background-toggle: hsl(6, 63%, 50%);
+      ---Dark--red--key--shadow: hsl(6, 70%, 34%);
+      ---Light--grayish--orange--key--background: hsl(30, 25%, 89%);
+      ---Grayish--orange--key--shadow: hsl(28, 16%, 65%);
+      ---Very--dark--grayish--blue: hsl(221, 14%, 31%);
+      ---White: hsl(0, 0%, 100%); 
+      transition: all 1s ease-in;
+ 
+}
+.theme-two {
+    ---Light--gray--main--background: hsl(0, 0%, 90%);
+    ---Grayish--red--toggle--background-keypad--background: hsl(0, 5%, 81%);
+    ---Very--light--gray--screen--background: hsl(0, 0%, 93%);
+    ---Dark--moderate--cyan--key--background: hsl(185, 42%, 37%);
+    ---Very--dark--cyan--key--shadow: hsl(185, 58%, 25%);
+    ---Orange--key--background-toggle: hsl(25, 98%, 40%);
+    ---Dark--orange--key--shadow: hsl(25, 99%, 27%);
+    ---Light--grayish--yellow--key--background: hsl(45, 7%, 9%);
+    ---Dark--grayish--orange--key--shadow: hsl(35, 11%, 61%);
+    ---Very--dark--grayish--yellow: hsl(60, 10%, 19%);
+    ---White--text: hsl(0, 0%, 100%);
+    transition: all 1s ease-in;
+ 
+} 
+.theme-three
+{
+    ---Very--dark--violet--main--background: hsl(268, 75%, 9%);
+    ---Very--dark--violet--toggle--background-keypad--background-screen--background: hsl(268, 71%, 12%);    
+    ---Dark--violet--key--background: hsl(281, 89%, 26%);
+    ---Vivid--magenta--key--shadow: hsl(285, 91%, 52%);
+    ---Pure--cyan--key--background-toggle: hsl(176, 100%, 44%);
+    ---Soft--cyan--key--shadow: hsl(177, 92%, 70%);
+    ---Very--dark--violet--key--background: hsl(268, 47%, 21%);
+    ---Dark--magenta--key--shadow: hsl(290, 70%, 36%);    
+    ---Light--yellow: hsl(52, 100%, 62%);
+    ---Very--dark--blue: hsl(198, 20%, 13%);
+    ---White--text: hsl(0, 0%, 100%);
+    transition: all 1s ease-in;
+
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(---Light--gray--main--background);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.theme-one{
+    background-color: var(---Very--dark--desaturated--blue--main--background);
+
+}
+.theme-two{
+    background-color: var(---Very--dark--desaturated--blue--main--background);
+
+}
+.theme-three{
+    background-color: var(---Very--dark--violet--main--background);
+
+}
+main {
+    width: 25rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+.theme-one header{
+    color: var(---White);
+}
+.theme-two header{
+    color: var(---Very--dark--grayish--yellow);
+
+}
+.theme-three header{
+    color: var(---White--text);
+
+}
+.label-cntr {
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 0.3rem;
+
+}
+
+header .flexer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+}
+
+.radio-cntr {
+    border-radius: 0.8rem;
+    padding-inline: 0.3rem;
+    position: relative;
+
+}
+.theme-one .radio-cntr{
+    background-color: var(---Very--dark--desaturated--blue--screen--background);
+
+}
+.theme-two .radio-cntr{
+    background-color: var(---Grayish--red--toggle--background-keypad--background);
+
+}
+.theme-three .radio-cntr{
+    background-color: var(---Very--dark--violet--toggle--background-keypad--background-screen--background);
+
+}
+input[type="radio"] {
+    margin-top: 0.2rem;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+}
+.thumb {
+    position: absolute;
+    border-radius: 2rem;
+    width: 1rem;
+    height: 1rem;
+    margin: 0.2rem;
+    content: '';
+    inset: 0;
+
+
+}
+.theme-one .thumb{
+    background-color: var(---Red--key--background-toggle);
+
+}
+.theme-two  .thumb{
+    background-color: var(---Orange--key--background-toggle);
+}
+.theme-three  .thumb {
+    background-color: var(---Pure--cyan--key--background-toggle);
+}
+
+
+input[type="radio"]::-webkit-inner-spin-button,
+input[type="radio"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    width: 10px;
+    height: 10px;
+    padding: 2px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+input[type="radio"]:focus {
+    outline: none;
+}
+
+
+form {
+    margin-block: 1rem;
+    width: 100%;
+}
+
+form input {
+    width: 100%;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: 700;
+    border-width: 0.2px;
+    color: var(---white);
+    color: var(---Very--dark--grayish--yellow);
+    border-radius: 0.5rem;
+    text-align: right;
+}
+.theme-one form input{    
+    color: white;
+    background-color: var(---Very--dark--desaturated--blue--screen--background);
+}
+.theme-two form input{
+    background-color: var(---Very--light--gray--screen--background);
+}
+.theme-three form input{
+    color: white;
+    border: 0;
+    background-color: var( ---Very--dark--violet--toggle--background-keypad--background-screen--background);
+}
+form input:focus {
+    border: 0!important;
+    border-color: inherit
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.btn-cntr {
+    border-radius: 0.5rem;
+    margin-block: 1rem;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    transform-style: preserve-3d;
+    perspective: 220rem;
+}
+.theme-one .btn-cntr{
+    background-color: var(---Very--dark--desaturated--blue--toggle--background-keypad--background);
+
+}
+.theme-two .btn-cntr{
+    background-color: var(---Grayish--red--toggle--background-keypad--background);
+
+}
+.theme-three .btn-cntr{
+    background-color: var( ---Very--dark--violet--toggle--background-keypad--background-screen--background);
+
+}
+.theme-one #delete,.theme-one #reset{
+    background-color: var(---Desaturated--dark--blue--key--shadow);
+    box-shadow: 2px 2px 2px var(---Desaturated--dark--blue--key--background);
+
+}
+
+.theme-two #delete, .theme-two #reset{
+    background-color: var(---Very--dark--cyan--key--shadow);
+    box-shadow: 2px 2px 2px var(---Dark--moderate--cyan--key--background);
+}
+.theme-three #delete, .theme-three #reset{
+    background-color: var(---Dark--magenta--key--shadow);
+    box-shadow: 2px 2px 2px var(---Very--dark--violet--key--background);
+}
+
+.theme-one #delete:hover,.theme-one #reset:hover{
+    background-color: var(---Desaturated--dark--blue--key--background);
+    box-shadow: 2px 2px 2px var(---Desaturated--dark--blue--key--shadow);
+
+}
+.theme-two #delete:hover, .theme-two #reset:hover{
+    background-color: var(---Dark--moderate--cyan--key--background);
+    box-shadow: 2px 2px 2px var(---Very--dark--cyan--key--shadow);
+}
+.theme-three #delete:hover, .theme-three #reset:hover{
+    background-color: var(---Very--dark--violet--key--background);
+    box-shadow: 2px 2px 2px var(---Dark--magenta--key--shadow);
+}
+.theme-one #equal{
+    background-color: var(---Dark--red--key--shadow);
+    box-shadow: 2px 2px 2px var(---Red--key--background-toggle);
+}
+
+.theme-two #equal{
+    background-color: var(---Dark--orange--key--shadow);
+    box-shadow: 2px 2px 2px var(---Orange--key--background-toggle);
+}
+.theme-three #equal{
+    background-color: var(---Pure--cyan--key--background-toggle);
+    box-shadow: 2px 2px 2px var(---Soft--cyan--key--shadow);
+}
+
+.theme-one #equal:hover{
+    background-color:var(---Red--key--background-toggle);
+    box-shadow: 2px 2px 2px  var(---Dark--red--key--shadow);
+
+}
+
+.theme-two #equal:hover {
+   
+
+    background-color: var(---Orange--key--background-toggle);
+    box-shadow: 2px 2px 2px var(---Dark--orange--key--shadow);
+
+}
+.theme-three #equal:hover{
+    background-color: var(---Soft--cyan--key--shadow);
+    box-shadow: 2px 2px 2px  var(---Pure--cyan--key--background-toggle);
+}
+
+
+.btn-cntr>button {
+    padding-block: 0.8rem;
+    font-size: 1.82rem;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    border-width: 0.1px;
+    transform: translate3d(0rem, 0, 2rem);
+}
+.theme-one  .btn-cntr>button{
+    box-shadow: 2px 2px 2px var(---Grayish--orange--key--shadow);
+    background-color: var(---Light--grayish--orange--key--background);
+
+}
+.theme-two .btn-cntr>button{
+    box-shadow: 2px 2px 2px var(---Dark--grayish--orange--key--shadow);
+    background-color: var(---Light--gray--main--background);
+}
+.theme-three .btn-cntr>button{
+    color: white;
+    background-color: var(---Very--dark--violet--key--background);
+    box-shadow: 2px 2px 2px var(---Dark--magenta--key--shadow);
+}
+.btn-cntr>button:hover {
+    transform: translateZ(0rem);
+
+}
+.theme-one .btn-cntr>button:hover
+{
+    background-color: var(---Grayish--orange--key--shadow);
+    box-shadow: 2px 2px 2px var(---Light--grayish--orange--key--background);
+
+}
+.theme-two .btn-cntr>button:hover{
+    background-color: var(---White--text);
+    box-shadow: 2px 2px 2px var(---Light--grayish--yellow--key--background);
+}
+.theme-three .btn-cntr>button:hover{
+    background-color: var(---Dark--magenta--key--shadow);
+    box-shadow: 2px 2px 2px var(---Very--dark--violet--key--background);
+}
+.spaner {
+    grid-column: span 2;
+}
+.inpt-cntr{
+    position: relative;
+}
+.error{
+    position: absolute;
+    height:1rem;
+    inset: 0;
+    text-align: right;
+    margin:1rem 0.5rem ;
+    color: red;
+}
+.oher{
+    position: relative;
+    margin: 0 1rem;
+    inset:inherit ;
+}
+@media (max-width:700px) {
+    main {
+        width: auto;
+        margin: 1rem;
+    }
+}
