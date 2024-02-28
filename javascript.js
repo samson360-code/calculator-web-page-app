@@ -393,6 +393,10 @@ screen.addEventListener('keypress', function (event) {
         event.preventDefault();
         inputRecevior(key);
     }
+       if(event.key="."){
+        event.preventDefault();
+                dot();
+    }
 });
 
 
